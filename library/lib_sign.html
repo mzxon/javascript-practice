@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>lib_main.html</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+<style>
+    body {
+        font: 20px Montserrat, sans-serif;
+        line-height: 1.8;
+        color: lightslategrey;
+    }
+    form {
+        width: 600px;
+        margin: auto;
+        margin-top: 20%;
+    }
+    .text{
+      margin-left: 0;
+    }
+    .sing-up, .submit {
+        width: 65%;
+        margin: auto;
+    }
+    #email, #pwd, #pwdck, #name, #birth, #gender {
+        margin-top: 15px;
+        height: 50px;
+    }
+    .submit{
+        margin-top: 5%;
+        margin-left: 18%;
+    }
+    #birth {
+      display: inline;
+      width: 32%;
+      margin-right: 4px;
+    }
+    #gender {
+      display: inline;
+      width: 32%;
+      margin-right: 4px;
+    }
+    p {
+        margin-top: 2%;
+        margin-left: 28%;
+        font-size: 15px;
+    }
+    hr {
+        width: 390px;
+        margin: auto;
+        margin-top: 20px;
+    }
+</style>
+    
+</head>
+    
+<body>
+
+    <!-- 회원가입 화면-->
+    <div class="container">
+        <form action="Join">
+            <div class="sign-up">
+                <p class="text">아이디</p>
+                <input type="email" class="form-control" id="email" placeholder="@example.com" name="email">
+                <p class="text">비밀번호</p>
+                <input type="password" class="form-control" id="pwd" name="pwd">
+                <p class="text">비밀번호 재확인</p>
+                <input type="password" class="form-control" id="pwdck" name="pwdck">
+            </div>
+            <div class="sign-up">
+              <p class="text">이름</p>
+              <input type="text" class="form-control" id="name"name="name">
+              <p class="text">생년월일</p>
+              <div class="birth">
+                <input type="text" class="form-control" id="birth" placeholder="년(4자)" name="year">
+                
+                    <select name="month" id="birth" style="border: 0px;">
+                    <option value="bthm">월</option>
+                    <option value="J">1</option>
+                    <option value="F">2</option>
+                    <option value="M">3</option>
+                    <option value="A">4</option>
+                    <option value="MA">5</option>
+                    <option value="J">6</option>
+                    <option value="JU">7</option>
+                    <option value="A">8</option>
+                    <option value="S">9</option>
+                    <option value="O">10</option>
+                    <option value="N">11</option>
+                    <option value="D">12</option>
+                </select>
+                
+                <input type="password" class="form-control" id="birth" placeholder="일"name="day">  
+              </div>
+              <div class="gender">
+                 
+              </div>
+          </div>
+          <div class="sign-up">
+            <input type="email" class="form-control" id="email" placeholder="아이디" name="email">
+            <input type="password" class="form-control" id="pwd" placeholder="비밀번호" name="pwd">
+        </div>
+            <button type="submit" class="submit">로그인</button>
+            <hr>
+            <p><a href="">아이디 찾기</a> | <a href="">비밀번호 찾기</a> | <a href="lib_sign.html">회원가입</a></p>
+        </form>
+    </div>
+
+    </body>
+</html>
+
